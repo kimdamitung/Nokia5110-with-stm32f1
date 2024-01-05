@@ -1,14 +1,12 @@
 /*
- * ASCII.h
+ * fonts.h
  *
  *  Created on: Jan 5, 2024
  *      Author: tungd
  */
 
-#include <stdint.h>
-
-#ifndef INC_ASCII_H_
-#define INC_ASCII_H_
+#ifndef INC_FONTS_H_
+#define INC_FONTS_H_
 
 static const uint8_t ASCII[][6] = {
 					  {0x00, 0x00, 0x00, 0x00, 0x00, 0x00} // 20
@@ -109,4 +107,4 @@ static const uint8_t ASCII[][6] = {
 					 ,{0x00, 0x78, 0x46, 0x41, 0x46, 0x78} // 7f â†’
 };
 
-#endif /* INC_ASCII_H_ */
+#endif /* INC_FONTS_H_ */
