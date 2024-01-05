@@ -41,25 +41,28 @@ struct LCD_GPIO{
 	GPIO_TypeDef *RSTPORT;
 	uint16_t RSTPIN;
 
-	GPIO_TypeDef* CEPORT;
+	GPIO_TypeDef *CEPORT;
 	uint16_t CEPIN;
 
-	GPIO_TypeDef* DCPORT;
+	GPIO_TypeDef *DCPORT;
 	uint16_t DCPIN;
 
-	GPIO_TypeDef* DINPORT;
+	GPIO_TypeDef *DINPORT;
 	uint16_t DINPIN;
 
-	GPIO_TypeDef* CLKPORT;
+	GPIO_TypeDef *CLKPORT;
 	uint16_t CLKPIN;
 };
 
+/*----- Math functions -----*/
+int abs(int x);
+
 /*----- GPIO Pins -----*/
-void LCD_setRST(GPIO_TypeDef* PORT, uint16_t PIN);
-void LCD_setCE(GPIO_TypeDef* PORT, uint16_t PIN);
-void LCD_setDC(GPIO_TypeDef* PORT, uint16_t PIN);
-void LCD_setDIN(GPIO_TypeDef* PORT, uint16_t PIN);
-void LCD_setCLK(GPIO_TypeDef* PORT, uint16_t PIN);
+void LCD_setRST(GPIO_TypeDef *PORT, uint16_t PIN);
+void LCD_setCE(GPIO_TypeDef *PORT, uint16_t PIN);
+void LCD_setDC(GPIO_TypeDef *PORT, uint16_t PIN);
+void LCD_setDIN(GPIO_TypeDef *PORT, uint16_t PIN);
+void LCD_setCLK(GPIO_TypeDef *PORT, uint16_t PIN);
 
 /*----- Library Functions -----*/
 void LCD_send(uint8_t val);
